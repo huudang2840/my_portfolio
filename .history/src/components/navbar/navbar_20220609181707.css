@@ -1,0 +1,11 @@
+.n-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.n-left {
+  flex: 1;
+  align-items: center;
+  display: flex;
+}

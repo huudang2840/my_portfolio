@@ -1,0 +1,52 @@
+.skill {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 90vh;
+  margin-top: 4rem;
+}
+
+.sk-right {
+  flex: 1;
+  position: relative;
+}
+.sk-mainCircle {
+  left: 9rem;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: white;
+}
+.sk-mainCircle > * {
+  position: absolute;
+}
+
+.sk-mainCircle > :nth-child(1) {
+  top: -3rem;
+  left: 6rem;
+}
+
+.sk-mainCircle > :nth-child(2) {
+  top: 6rem;
+  left: -2rem;
+}
+.sk-mainCircle > :nth-child(3) {
+  top: 6rem;
+  left: 5rem;
+}
+.sk-mainCircle > :nth-child(4) {
+  top: 15rem;
+  left: 5rem;
+}
+
+.sk-mainCircle > :nth-child(5) {
+  top: 6rem;
+  left: 13rem;
+}
+
+.sk-secCircle {
+  width: 6rem;
+  height: 6rem;13rem;
+}

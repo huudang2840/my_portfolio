@@ -1,0 +1,13 @@
+.skill {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 90vh;
+  margin-top: 4rem;
+}
+
+.sk-right {
+  flex: 1;
+  position: relative;
+}
+.sk-mainCircle {
+}

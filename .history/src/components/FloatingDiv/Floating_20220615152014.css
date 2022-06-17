@@ -1,0 +1,23 @@
+.f-wrapper {
+  display: flex;
+}
+.floatingdiv {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  background: white;
+  box-shadow: var(--boxShadow);
+  border-radius: 17px;
+  align-items: center;
+  padding: 1px 16px;
+  margin:-left:4px;
+}
+
+.f-img {
+  max-width: 5rem;
+}
+
+.floatingdiv > span {
+  font-family: sans-serif;
+  font-size: 17px;
+}

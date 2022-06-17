@@ -1,0 +1,64 @@
+.c-wapper {
+  padding: 0 3rem 0 3rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.c-heading {
+  align-self: start;
+}
+.c-heading > * {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.c-heading span:nth-of-type(2) {
+  color: var(--blue);
+}
+.c-blur1 {
+  left: 38rem;
+  top: 16rem;
+}
+.c-blur2 {
+  left: 0;
+  top: 9rem;
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  width: 40rem;
+  height: 20rem;
+  background: rgba(255, 255, 255, 0.26);
+  border: 7px solid var(--blueCard);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+}
+
+.comment > img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+}
+
+.comment > span {
+  color: gray;
+}
+
+.c-wapper .swiper {
+  height: 70%;
+  width: 100%;
+}
+.c-wapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

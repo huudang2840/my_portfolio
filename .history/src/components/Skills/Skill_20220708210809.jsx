@@ -97,7 +97,7 @@ const Skill = () => {
         />
         <motion.img
           initial={{ top: "0%", left: "30%" }}
-          whileInView={{ top: "45%", left: "7%" }}
+          whileInView={{ top: "50%", left: "5%" }}
           transition={transition}
           src={firebase}
           alt=""
@@ -106,14 +106,14 @@ const Skill = () => {
           initial={{ top: "0%", left: "30%" }}
           whileInView={{ top: "35%", left: "-8%" }}
           transition={transition}
-          style={{ scale: "0.5" }}
+          style={{ scale: "0.6" }}
           src={figma}
           alt=""
         />
         <motion.img
           initial={{ top: "-10%", left: "40%" }}
           whileInView={{ top: "5%", left: "-5%" }}
-          style={{ scale: "0.7" }}
+          style={{ scale: "0.6" }}
           transition={transition}
           src={sql}
           alt=""

@@ -44,7 +44,7 @@ const Intro = () => {
             everyone.
           </span>
         </div>
-        <a href={CV} download>
+        <a href="/CV_NHD.pdf" download>
           <button className="button i-button">Download CV</button>
         </a>
         <div className="i-icons">

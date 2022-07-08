@@ -8,8 +8,7 @@ import eWallet from "../../img/e-wallet.png";
 import chatRoom from "../../img/chatroom.png";
 import myPortfolio from "../../img/myportfolio.png";
 import uiWalletApp from "../../img/ui-walletapp.png";
-import magicNoteApp from "../../img/NoteApp.png";
-import todoApp from "../../img/smartTodo.png";
+import uiWalletApp from "../../img/ui-walletapp.png";
 
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
@@ -28,16 +27,6 @@ const Project = () => {
       title: "E-Wallet",
       link: "https://vi-dien-tu.herokuapp.com",
       img: eWallet,
-    },
-    {
-      title: "Magic Note App",
-      link: "https://youtu.be/WhU7olvp8pQ",
-      img: magicNoteApp,
-    },
-    {
-      title: "Todo App",
-      link: " https://youtu.be/r_UwUaFk3Rg",
-      img: todoApp,
     },
     {
       title: "Chat room",
@@ -69,6 +58,11 @@ const Project = () => {
     {
       title: "Shopee Clone UI",
       link: "https://huudang2840.github.io/shopee_clone/",
+      img: shopeeClone,
+    },
+    {
+      title: "Magic Note App",
+      link: "https://youtu.be/WhU7olvp8pQ",
       img: shopeeClone,
     },
   ];

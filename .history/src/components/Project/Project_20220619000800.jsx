@@ -5,11 +5,6 @@ import eCard from "../../img/20-11.png";
 import musicApp from "../../img/music-app.png";
 import shopeeClone from "../../img/shopee_clone.png";
 import eWallet from "../../img/e-wallet.png";
-import chatRoom from "../../img/chatroom.png";
-import myPortfolio from "../../img/myportfolio.png";
-import uiWalletApp from "../../img/ui-walletapp.png";
-import magicNoteApp from "../../img/NoteApp.png";
-import todoApp from "../../img/smartTodo.png";
 
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
@@ -25,36 +20,15 @@ const Project = () => {
   const widthScreen = window.screen.availWidth;
   const projects = [
     {
-      title: "E-Wallet",
+      title: "E-Wallet'",
       link: "https://vi-dien-tu.herokuapp.com",
       img: eWallet,
     },
     {
-      title: "Magic Note App",
-      link: "https://youtu.be/WhU7olvp8pQ",
-      img: magicNoteApp,
+      title: "E-Wallet'",
+      link: "https://vi-dien-tu.herokuapp.com",
+      img: eWallet,
     },
-    {
-      title: "Todo App",
-      link: " https://youtu.be/r_UwUaFk3Rg",
-      img: todoApp,
-    },
-    {
-      title: "Chat room",
-      link: "https://chat-socket-nodejs.herokuapp.com",
-      img: chatRoom,
-    },
-    {
-      title: "My Portfolio",
-      link: "https://nguyen-huu-dang.herokuapp.com",
-      img: myPortfolio,
-    },
-    {
-      title: "UI Wallet App",
-      link: "https://www.figma.com/proto/vzTMSl7FGUGNNqQe6C1dLe/UI-V%C3%AD-%C4%91i%E1%BB%87n-t%E1%BB%AD---Final?node-id=46%3A284&starting-point-node-id=46%3A284",
-      img: uiWalletApp,
-    },
-
     {
       title: "E-Card 'Chào Mừng 20-11'",
       link: "https://sixters19050401.github.io/",

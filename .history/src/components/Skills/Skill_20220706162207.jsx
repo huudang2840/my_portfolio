@@ -11,9 +11,6 @@ import java from "../../img/java.png";
 import sql from "../../img/sql.png";
 import mongo from "../../img/mongoDB.png";
 
-import firebase from "../../img/firebase.png";
-import figma from "../../img/figma.png";
-
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { themeContext } from "../../Context";
@@ -41,10 +38,9 @@ const Skill = () => {
           <br />
           MongoDB, SQL, Firebase
           <br />
+          <b style={{ color: darkMode ? "white" : "black" }}>Database: </b>
           <br />
-          <b style={{ color: darkMode ? "white" : "black" }}>UX/UI: </b>
-          <br />
-          Figma
+          MongoDB, SQL, Firebase
           <br />
         </span>
         <Link spy={true} to="Contact" smooth={true}>
@@ -82,40 +78,23 @@ const Skill = () => {
         <div className="sk-backCircle redCircle"></div>
         <motion.img
           initial={{ top: "-10%", left: "40%" }}
-          whileInView={{ top: "20%", left: "-20%" }}
+          whileInView={{ top: "25%", left: "-18%" }}
           transition={transition}
           src={java}
           alt=""
         />
-
+        <motion.img
+          initial={{ top: "0%", left: "30%" }}
+          whileInView={{ top: "55%", left: "5%" }}
+          transition={transition}
+          src={sql}
+          alt=""
+        />
         <motion.img
           initial={{ top: "-10%", left: "50%" }}
           whileInView={{ top: "-5%", left: "10%" }}
           transition={transition}
           src={mongo}
-          alt=""
-        />
-        <motion.img
-          initial={{ top: "0%", left: "30%" }}
-          whileInView={{ top: "45%", left: "7%" }}
-          transition={transition}
-          src={firebase}
-          alt=""
-        />
-        <motion.img
-          initial={{ top: "0%", left: "30%" }}
-          whileInView={{ top: "35%", left: "-8%" }}
-          transition={transition}
-          style={{ scale: "0.5" }}
-          src={figma}
-          alt=""
-        />
-        <motion.img
-          initial={{ top: "-10%", left: "40%" }}
-          whileInView={{ top: "5%", left: "-5%" }}
-          style={{ scale: "0.7" }}
-          transition={transition}
-          src={sql}
           alt=""
         />
       </div>

@@ -97,7 +97,7 @@ const Skill = () => {
         />
         <motion.img
           initial={{ top: "0%", left: "30%" }}
-          whileInView={{ top: "45%", left: "7%" }}
+          whileInView={{ top: "50%", left: "5%" }}
           transition={transition}
           src={firebase}
           alt=""

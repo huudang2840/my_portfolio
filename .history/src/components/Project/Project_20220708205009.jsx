@@ -30,16 +30,6 @@ const Project = () => {
       img: eWallet,
     },
     {
-      title: "Magic Note App",
-      link: "https://youtu.be/WhU7olvp8pQ",
-      img: magicNoteApp,
-    },
-    {
-      title: "Todo App",
-      link: " https://youtu.be/r_UwUaFk3Rg",
-      img: todoApp,
-    },
-    {
       title: "Chat room",
       link: "https://chat-socket-nodejs.herokuapp.com",
       img: chatRoom,
@@ -70,6 +60,16 @@ const Project = () => {
       title: "Shopee Clone UI",
       link: "https://huudang2840.github.io/shopee_clone/",
       img: shopeeClone,
+    },
+    {
+      title: "Magic Note App",
+      link: "https://youtu.be/WhU7olvp8pQ",
+      img: magicNoteApp,
+    },
+    {
+      title: "Todo App",
+      link: " https://youtu.be/r_UwUaFk3Rg",
+      img: todoApp,
     },
   ];
 

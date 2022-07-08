@@ -82,12 +82,18 @@ const Skill = () => {
         <div className="sk-backCircle redCircle"></div>
         <motion.img
           initial={{ top: "-10%", left: "40%" }}
-          whileInView={{ top: "20%", left: "-20%" }}
+          whileInView={{ top: "25%", left: "-18%" }}
           transition={transition}
           src={java}
           alt=""
         />
-
+        <motion.img
+          initial={{ top: "0%", left: "30%" }}
+          whileInView={{ top: "55%", left: "5%" }}
+          transition={transition}
+          src={sql}
+          alt=""
+        />
         <motion.img
           initial={{ top: "-10%", left: "50%" }}
           whileInView={{ top: "-5%", left: "10%" }}
@@ -96,26 +102,17 @@ const Skill = () => {
           alt=""
         />
         <motion.img
-          initial={{ top: "0%", left: "30%" }}
-          whileInView={{ top: "45%", left: "7%" }}
+          initial={{ top: "-10%", left: "40%" }}
+          whileInView={{ top: "5%", left: "-5%" }}
           transition={transition}
           src={firebase}
           alt=""
         />
         <motion.img
           initial={{ top: "0%", left: "30%" }}
-          whileInView={{ top: "35%", left: "-8%" }}
+          whileInView={{ top: "25%", left: "5%" }}
           transition={transition}
-          style={{ scale: "0.5" }}
           src={figma}
-          alt=""
-        />
-        <motion.img
-          initial={{ top: "-10%", left: "40%" }}
-          whileInView={{ top: "5%", left: "-5%" }}
-          style={{ scale: "0.7" }}
-          transition={transition}
-          src={sql}
           alt=""
         />
       </div>

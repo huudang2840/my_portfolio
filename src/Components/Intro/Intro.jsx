@@ -14,7 +14,7 @@ import icon1 from "../../img/icon1.png";
 import icon2 from "../../img/icon2.png";
 import icon3 from "../../img/icon3.png";
 
-import CV from "./CV_NHD.pdf";
+import CV from "./CV_NHD_English.pdf";
 
 import Typical from "react-typical";
 

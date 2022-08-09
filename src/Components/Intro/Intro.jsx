@@ -68,7 +68,7 @@ const Intro = () => {
         <img src={Background2} alt="" />
         <img src={avatar} alt="" />
         <motion.img
-          style={{ maxWidth: "14rem" }}
+          style={{ maxWidth: "14rem", zIndex: "10" }}
           initial={{ top: "-40%", left: "-20%" }}
           whileInView={{ top: "-30%", left: "-5%" }}
           transition={transition}

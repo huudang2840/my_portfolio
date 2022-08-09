@@ -90,10 +90,14 @@
 }
 @media screen and (max-width: 480px) {
   .skill {
+    padding-top: 2rem;
     flex-direction: column;
   }
   .sk-right {
     transform: scale(0.75);
+  }
+  .sk-right > img {
+    display: none;
   }
   .sk-mainCircle {
     left: 5rem;

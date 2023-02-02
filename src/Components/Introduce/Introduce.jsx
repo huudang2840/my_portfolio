@@ -24,7 +24,7 @@ const Introduce = () => {
         <span>in University</span>
         <span>
           <br />
-          I am a 3rd year student at Ton Duc Thang University.
+          I am a final year student at Ton Duc Thang University.
           <br />
           My major is Information Technology.
           <br />

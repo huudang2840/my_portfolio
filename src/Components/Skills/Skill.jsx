@@ -34,7 +34,7 @@ const Skill = () => {
           <br />
           <b style={{ color: darkMode ? "white" : "black" }}>Development: </b>
           <br />
-          HTML, CSS, JavaScript, Nodejs, Reactjs, Java
+          HTML, CSS, JavaScript, ReactJS, NodeJS, , Java
           <br />
           <br />
           <b style={{ color: darkMode ? "white" : "black" }}>Database: </b>

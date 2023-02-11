@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
+// import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import Email from "@iconscout/react-unicons/icons/uil-envelope";
 import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="f-content">
-        <span>dangnguyen2842@gmail.com</span>
+        <span>CONTACT WITH ME</span>
         <div className="f-icons">
           <a
             target="_blank"
@@ -20,14 +20,14 @@ const Footer = () => {
           >
             <Email size="3rem"></Email>
           </a>
-          <a
+          {/* <a
             target="_blank"
             rel="noreferrer"
             href="https://www.facebook.com/dangdang.28/"
             style={{ color: "white" }}
           >
             <Facebook size="3rem"></Facebook>
-          </a>
+          </a> */}
           <a
             target="_blank"
             rel="noreferrer"

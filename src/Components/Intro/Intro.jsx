@@ -1,9 +1,10 @@
 import React from "react";
 import "./Intro.css";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
+import Fade from "react-reveal/Fade";
 
 import Github from "../../img/github.png";
-import Facebook from "../../img/fb.png";
+// import Facebook from "../../img/fb.png";
 import LinkedIn from "../../img/linkedin.png";
 
 import Background1 from "../../img/background1.png";
@@ -51,9 +52,9 @@ const Intro = () => {
           <a target="_blank" href="https://github.com/huudang2840" rel="noreferrer">
             <img src={Github} alt="" />
           </a>
-          <a target="_blank" href="https://www.facebook.com/dangdang.28/" rel="noreferrer">
+          {/* <a target="_blank" href="https://www.facebook.com/dangdang.28/" rel="noreferrer">
             <img src={Facebook} alt="" />
-          </a>
+          </a> */}
           <a
             target="_blank"
             href="https://www.linkedin.com/in/đăng-nguyễn-7a4b04240/"
@@ -66,7 +67,10 @@ const Intro = () => {
       <div className="i-right">
         <img src={Background1} alt="" />
         <img src={Background2} alt="" />
-        <img src={avatar} alt="" />
+        <Fade bottom distance="10%" duration={1000}>
+          <img src={avatar} alt="" />
+        </Fade>
+
         <motion.img
           style={{ maxWidth: "14rem", zIndex: "10" }}
           initial={{ top: "-40%", left: "-20%" }}

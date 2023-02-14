@@ -65,7 +65,24 @@
 
   @media screen and (max-height: 700px) {
     .introduce {
-      height: 130vh;
+      height: 125vh;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .introduce {
+      padding: 0 1.5rem 0 1.5rem;
+      height: 168vh;
+    }
+    .infor > span:nth-child(1) {
+      font-size: 1.7rem;
+    }
+    .infor > span:nth-child(2) {
+      font-size: 1.7rem;
+    }
+    .cards {
+      margin-top: -10rem;
+      transform: scale(0.7);
     }
   }
 }

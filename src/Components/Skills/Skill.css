@@ -110,7 +110,7 @@
   .skill {
     padding-top: 1rem;
     flex-direction: column;
-    height: 140vh;
+    height: 130vh;
   }
   .sk-center {
     scale: 0.7;
@@ -119,5 +119,23 @@
   .sk-right {
     flex-direction: row;
     margin-top: 0;
+  }
+  .sk-right > img {
+    margin-top: 2rem;
+    max-width: 5rem;
+  }
+
+  @media screen and (max-width: 350px) {
+    .skill {
+      height: 140vh;
+    }
+    .sk-center {
+      scale: 0.65;
+      margin-right: 40rem !important;
+    }
+    .sk-right > img {
+      margin-top: 2rem;
+      max-width: 4rem;
+    }
   }
 }

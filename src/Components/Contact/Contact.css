@@ -149,9 +149,26 @@ textarea {
     .contact {
       height: 130vh;
     }
-
-    ..c-left > span > p {
+    .c-left > h1 {
+      margin-right: 3rem;
+    }
+    .c-left > span > p {
       padding: 0 1rem;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .contact {
+      height: 152vh;
+      padding: 0 1.5rem;
+    }
+    .c-left > h1 {
+      margin-left: 3rem;
+    }
+    .c-left > span > p {
+      padding: 0 1rem;
+    }
+    .c-title span:nth-child(1) {
+      font-size: 2rem;
     }
   }
 }

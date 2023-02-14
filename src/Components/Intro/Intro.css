@@ -105,10 +105,6 @@
     left: -4rem;
   }
 
-  .i-right .blur {
-    display: none;
-  }
-
   .i-name > :nth-child(1) {
     font-size: 3rem;
   }
@@ -121,13 +117,13 @@
     left: -7rem;
   }
   .i-dev {
-    margin-left: 12rem;
-    display: none !important;
+    margin-left: 12.3rem;
+    /* display: none !important; */
   }
   .i-friendly {
     margin-left: 2rem;
-    margin-top: 10rem;
-    top: 200% !important;
+    /* margin-top: 10rem;÷ */
+    top: 550% !important;
     display: none !important;
   }
   .i-name > :nth-child(3) {

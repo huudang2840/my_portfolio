@@ -108,7 +108,7 @@
 }
 @media screen and (max-width: 780px) {
   .skill {
-    padding-top: 2rem;
+    padding-top: 1rem;
     flex-direction: column;
     height: 140vh;
   }

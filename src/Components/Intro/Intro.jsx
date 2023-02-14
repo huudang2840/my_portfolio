@@ -17,7 +17,7 @@ import icon1 from "../../img/icon1.png";
 import icon2 from "../../img/icon2.png";
 import icon3 from "../../img/icon3.png";
 
-import CV from "./CV_NHD_English.pdf";
+import CV from "./CV_2023_ENGLISH.pdf";
 
 import Typical from "react-typical";
 
@@ -91,7 +91,7 @@ const Intro = () => {
           transition={transition}
           style={{ zIndex: "10", top: "-18%", left: "65%" }}
         >
-          <FloatingDiv image={icon2} txt1="Front End Developer" />
+          <FloatingDiv image={icon2} txt1="Web Developer" />
         </motion.div>
 
         <motion.div

@@ -62,4 +62,10 @@
   .cards > * {
     position: static;
   }
+
+  @media screen and (max-height: 700px) {
+    .introduce {
+      height: 130vh;
+    }
+  }
 }

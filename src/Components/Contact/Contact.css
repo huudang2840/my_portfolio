@@ -145,4 +145,13 @@ textarea {
     display: flex;
     width: fit-content;
   }
+  @media screen and (max-height: 700px) {
+    .contact {
+      height: 130vh;
+    }
+
+    ..c-left > span > p {
+      padding: 0 1rem;
+    }
+  }
 }

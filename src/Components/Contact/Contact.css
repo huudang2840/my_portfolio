@@ -135,8 +135,7 @@ textarea {
     margin-left: 4px;
     margin-right: 4px;
   }
-  . element.style {
-  }
+
   .contact-icon {
     justify-content: center;
   }
@@ -156,6 +155,11 @@ textarea {
       padding: 0 1rem;
     }
   }
+  @media screen and (max-height: 700px) {
+    .c-title span:nth-child(1) {
+      font-size: 2.5rem;
+    }
+  }
   @media screen and (max-width: 350px) {
     .contact {
       height: 152vh;
@@ -168,7 +172,7 @@ textarea {
       padding: 0 1rem;
     }
     .c-title span:nth-child(1) {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 }

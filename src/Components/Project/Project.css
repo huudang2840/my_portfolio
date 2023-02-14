@@ -1,10 +1,11 @@
 .project {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  padding-top: 5rem;
   height: 70vh;
   padding-bottom: 10rem;
+}
+.project-center {
+  text-align: center;
+  padding-bottom: 3rem;
 }
 
 .project span:nth-child(1) {
@@ -13,21 +14,87 @@
   font-weight: bold;
 }
 
-.project .swiper {
-  overflow: hidden !important;
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.project-slider {
-  margin-top: 3rem;
+.slick-dots {
+  bottom: -50px !important;
+}
+.slick-dots li button:before {
+  font-size: 10px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--redPrimary) !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 25px !important;
+  color: #2b2e4aeb !important;
+}
+
+.project-card {
+  border: 2px solid var(--redCard);
+  background: #2b2e4aeb;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 320px;
+  color: #fff;
+}
+
+.project-card-top h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  margin: 20px;
+  margin-bottom: 10px;
+  color: var(--redPrimary);
+  cursor: pointer;
+}
+.project-card-top a {
+  text-decoration: none;
+}
+
+.project-card-top p {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0px 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: auto;
+}
+.project-card-top p:hover {
+  overflow: visible;
+  white-space: pre-wrap;
+}
+
+.project-card-top > img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.project-slider .swiper-slide {
-  width: 25rem;
+.project-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 20px;
+}
+.project-card-bottom > a {
+  text-decoration: none;
+  color: white;
 }
 
-.project img {
-  width: 25rem;
-  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
-  border-radius: 25px;
+@media screen and (max-width: 780px) {
+  .project {
+    height: 60vh;
+  }
 }

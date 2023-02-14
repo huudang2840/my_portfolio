@@ -1,102 +1,74 @@
-import React from "react";
-import "./Project.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import eCard from "../../img/20-11.png";
-import musicApp from "../../img/music-app.png";
-import shopeeClone from "../../img/shopee_clone.png";
-import eWallet from "../../img/e-wallet.png";
-import chatRoom from "../../img/chatroom.png";
-import myPortfolio from "../../img/myportfolio.png";
-import uiWalletApp from "../../img/ui-walletapp.png";
-import magicNoteApp from "../../img/NoteApp.png";
-import todoApp from "../../img/smartTodo.png";
+import React, { useEffect } from "react";
 
-import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.min.css";
+import "./Project.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { themeContext } from "../../Context";
 import { useContext } from "react";
-
-import ProjectCard from "../ProjectCard/ProjectCard";
+import Github from "@iconscout/react-unicons/icons/uil-github";
+import { projects } from "./listProjects.jsx";
 
 const Project = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  }, []);
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-  const widthScreen = window.screen.availWidth;
-  const projects = [
-    {
-      title: "E-Wallet",
-      link: "https://vi-dien-tu.herokuapp.com",
-      img: eWallet,
-    },
-    {
-      title: "Magic Note App",
-      link: "https://youtu.be/WhU7olvp8pQ",
-      img: magicNoteApp,
-    },
-    {
-      title: "Todo App",
-      link: " https://youtu.be/r_UwUaFk3Rg",
-      img: todoApp,
-    },
-    {
-      title: "Chat room",
-      link: "https://chat-socket-nodejs.herokuapp.com",
-      img: chatRoom,
-    },
-    {
-      title: "My Portfolio",
-      link: "https://nguyen-huu-dang.herokuapp.com",
-      img: myPortfolio,
-    },
-    {
-      title: "UI Wallet App",
-      link: "https://www.figma.com/proto/vzTMSl7FGUGNNqQe6C1dLe/UI-V%C3%AD-%C4%91i%E1%BB%87n-t%E1%BB%AD---Final?node-id=46%3A284&starting-point-node-id=46%3A284",
-      img: uiWalletApp,
-    },
-
-    {
-      title: "E-Card 'Chào Mừng 20-11'",
-      link: "https://sixters19050401.github.io/",
-      img: eCard,
-    },
-
-    {
-      title: "Music App",
-      link: "https://huudang2840.github.io/music-player/",
-      img: musicApp,
-    },
-    {
-      title: "Shopee Clone UI",
-      link: "https://huudang2840.github.io/shopee_clone/",
-      img: shopeeClone,
-    },
-  ];
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    arrows: true,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  };
 
   return (
     <div className="project" id="Project">
-      {/* Heading */}
-      <span style={{ color: darkMode ? "white" : "" }}>
-        My <span style={{ color: "var(--redPrimary)" }}>Projects</span>
-      </span>
+      <div className="project-center">
+        <span style={{ color: darkMode ? "white" : "" }}>
+          My <span style={{ color: "var(--redPrimary)" }}>Projects</span>
+        </span>
+      </div>
 
-      {/* Slider */}
-
-      <Swiper
-        height={30}
-        spaceBetween={30}
-        slidesPerView={widthScreen <= 480 ? 1 : 3}
-        grabCursor={true}
-        className="project-slider"
-      >
-        {projects.map((p, index) => {
-          return (
-            <SwiperSlide key={index}>
-              <ProjectCard link={p.link} img={p.img} darkMode={darkMode} title={p.title} />
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+      <Slider {...settings}>
+        {projects.map((item) => (
+          <div className="project-card" data-aos="zoom-in">
+            <div className="project-card-top">
+              <img src={item.img} alt={item.title} />
+              <a href={item.link} target="_blank" rel="noreferrer">
+                <h1>{item.title}</h1>
+              </a>
+              <p>{item.description}</p>
+            </div>
+            <div className="project-card-bottom">
+              <a href={item.github} target="_blank" rel="noreferrer">
+                <Github size="1.5rem"></Github>
+              </a>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };

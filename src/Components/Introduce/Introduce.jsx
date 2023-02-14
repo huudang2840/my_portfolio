@@ -46,7 +46,7 @@ const Introduce = () => {
         <motion.div
           initial={{ right: "30%" }}
           whileInView={{ left: "20rem" }}
-          style={{ top: "0" }}
+          style={{ top: "1rem" }}
           transition={transition}
         >
           <Card emoij={secondPrize} heading={"Dance Competition"} detail={"The Second Prize"} />

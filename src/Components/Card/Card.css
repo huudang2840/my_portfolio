@@ -27,3 +27,9 @@
   max-width: 6rem;
   margin-top: 0.3rem;
 }
+
+@media screen and (max-width: 780px) {
+  .card {
+    gap: 1rem;
+  }
+}

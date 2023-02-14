@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Intro.css";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Github from "../../img/github.png";
 // import Facebook from "../../img/fb.png";
@@ -25,6 +27,10 @@ import { themeContext } from "../../Context";
 import { useContext } from "react";
 
 const Intro = () => {
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
+
   const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -67,9 +73,7 @@ const Intro = () => {
       <div className="i-right">
         <img src={Background1} alt="" />
         <img src={Background2} alt="" />
-        <Fade bottom distance="10%" duration={1000}>
-          <img src={avatar} alt="" />
-        </Fade>
+        <img src={avatar} alt="" data-aos="fade-up" />
 
         <motion.img
           style={{ maxWidth: "14rem", zIndex: "10" }}

@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Skill.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import html from "../../img/html.png";
 import css from "../../img/css.png";
@@ -7,12 +9,12 @@ import js from "../../img/js.png";
 import react from "../../img/react.png";
 import nodejs from "../../img/nodejs.png";
 
-import java from "../../img/java.png";
+// import java from "../../img/java.png";
 import sql from "../../img/sql.png";
 import mongo from "../../img/mongoDB.png";
 
 import firebase from "../../img/firebase.png";
-import figma from "../../img/figma.png";
+// import figma from "../../img/figma.png";
 
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -20,21 +22,23 @@ import { themeContext } from "../../Context";
 import { useContext } from "react";
 
 const Skill = () => {
-  const transition = { duration: 3, type: "spring" };
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  }, []);
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   return (
     <div className="skill" id="Skills">
       {/* Bên trái */}
-      <div className="infor">
+      <div className="infor infor-skill">
         <span style={{ color: darkMode ? "white" : "" }}>Technical</span>
         <span>Skills</span>
         <span>
           <br />
           <b style={{ color: darkMode ? "white" : "black" }}>Development: </b>
           <br />
-          HTML, CSS, JavaScript, ReactJS, NodeJS, , Java
+          HTML, CSS, JavaScript, ReactJS, NodeJS, Java
           <br />
           <br />
           <b style={{ color: darkMode ? "white" : "black" }}>Database: </b>
@@ -53,7 +57,7 @@ const Skill = () => {
       </div>
       {/* Bên phải */}
 
-      <div className="sk-right">
+      <div className="sk-center">
         <motion.div
           initial={{ rotate: 60 }}
           whileInView={{ rotate: 0 }}
@@ -80,44 +84,14 @@ const Skill = () => {
         {/* bg Circle */}
         <div className="sk-backCircle blueCircle"></div>
         <div className="sk-backCircle redCircle"></div>
-        <motion.img
-          initial={{ top: "-10%", left: "40%" }}
-          whileInView={{ top: "20%", left: "-20%" }}
-          transition={transition}
-          src={java}
-          alt=""
-        />
+      </div>
 
-        <motion.img
-          initial={{ top: "-10%", left: "50%" }}
-          whileInView={{ top: "-5%", left: "10%" }}
-          transition={transition}
-          src={mongo}
-          alt=""
-        />
-        <motion.img
-          initial={{ top: "0%", left: "30%" }}
-          whileInView={{ top: "45%", left: "7%" }}
-          transition={transition}
-          src={firebase}
-          alt=""
-        />
-        <motion.img
-          initial={{ top: "0%", left: "30%" }}
-          whileInView={{ top: "35%", left: "-8%" }}
-          transition={transition}
-          style={{ scale: "0.5" }}
-          src={figma}
-          alt=""
-        />
-        <motion.img
-          initial={{ top: "-10%", left: "40%" }}
-          whileInView={{ top: "5%", left: "-5%" }}
-          style={{ scale: "0.7" }}
-          transition={transition}
-          src={sql}
-          alt=""
-        />
+      <div className="sk-right">
+        {/* <Fade bottom cascade duration={1500} appear={false}> */}
+        <img src={sql} alt="" data-aos="fade-up" />
+        <img src={mongo} alt="" data-aos="fade-up" />
+        <img src={firebase} alt="" data-aos="fade-up" />
+        {/* </Fade> */}
       </div>
     </div>
   );

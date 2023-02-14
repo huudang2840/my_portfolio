@@ -43,11 +43,18 @@
   flex: 2;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .n-list {
     display: none;
   }
   .n-button {
     display: none;
+  }
+  .n-left {
+    flex: 1;
+    justify-content: space-between;
+  }
+  .n-right {
+    flex: 0;
   }
 }

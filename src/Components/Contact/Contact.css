@@ -143,6 +143,9 @@ textarea {
     display: flex;
     width: fit-content;
   }
+  .cards {
+    margin-left: 2rem;
+  }
   @media screen and (max-height: 700px) {
     .contact {
       height: 130vh;

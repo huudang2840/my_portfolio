@@ -125,6 +125,11 @@
     max-width: 5rem;
   }
 
+  @media screen and (max-height: 700px) {
+    .skill {
+      height: 135vh;
+    }
+  }
   @media screen and (max-width: 350px) {
     .skill {
       height: 140vh;

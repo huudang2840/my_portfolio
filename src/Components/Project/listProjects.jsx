@@ -7,10 +7,20 @@ import myPortfolio from "../../img/myportfolio.png";
 import uiWalletApp from "../../img/ui-walletapp.png";
 import magicNoteApp from "../../img/NoteApp.png";
 import todoApp from "../../img/smartTodo.png";
+import saveMyHoney from "../../img/SaveMyHoney.png";
 
 export const projects = [
   {
     id: 1,
+    title: "Save My Honey Game",
+    link: "https://play.unity.com/mg/other/buildgame-25",
+    img: saveMyHoney,
+    description: "2D Game, WebGL, Unity",
+    github: "https://github.com/huudang2840/SaveMyHoneyGame",
+  },
+
+  {
+    id: 2,
     title: "E-Wallet",
     link: "https://vi-dien-tu.onrender.com",
     img: eWallet,
@@ -18,7 +28,7 @@ export const projects = [
     github: "https://github.com/huudang2840/vi-dien-tu-WEBNC",
   },
   {
-    id: 2,
+    id: 3,
     title: "Magic Note App",
     link: "https://youtu.be/WhU7olvp8pQ",
     img: magicNoteApp,
@@ -26,7 +36,7 @@ export const projects = [
     github: "https://github.com/huudang2840/UDDD_CK_MagicNote",
   },
   {
-    id: 3,
+    id: 4,
     title: "Todo App",
     link: " https://youtu.be/r_UwUaFk3Rg",
     img: todoApp,
@@ -34,14 +44,14 @@ export const projects = [
     github: "https://github.com/huudang2840/ToDoApp_UDDD",
   },
   {
-    id: 4,
+    id: 5,
     title: "Chat room",
     link: "https://chat-socket-nodejs.onrender.com",
     img: chatRoom,
     description: "HTML, CSS, JS, NodeJS(ExpressJS), MongoDB",
   },
   {
-    id: 5,
+    id: 6,
     title: "My Portfolio",
     link: "https://nguyenhuudang.netlify.app",
     img: myPortfolio,
@@ -49,7 +59,7 @@ export const projects = [
     github: "https://github.com/huudang2840/my_portfolio",
   },
   {
-    id: 6,
+    id: 7,
     title: "UI Wallet App",
     link: "https://www.figma.com/proto/vzTMSl7FGUGNNqQe6C1dLe/UI-V%C3%AD-%C4%91i%E1%BB%87n-t%E1%BB%AD---Final?node-id=46%3A284&starting-point-node-id=46%3A284",
     img: uiWalletApp,
@@ -57,7 +67,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "E-Card 'Chào Mừng 20-11'",
     link: "https://sixters19050401.github.io/",
     img: eCard,
@@ -66,7 +76,7 @@ export const projects = [
   },
 
   {
-    id: 8,
+    id: 9,
     title: "Music App",
     link: "https://huudang2840.github.io/music-player/",
     img: musicApp,
